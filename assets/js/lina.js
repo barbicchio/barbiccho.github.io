@@ -49,13 +49,13 @@ function pagePilling(){
 
     $('#pagepiling').pagepiling({
         sectionsColor: ['#f1f3f6', '#f1f3f6', '#f1f3f6', '#f1f3f6', '#f1f3f6','#f1f3f6', '#f1f3f6' ,'#f1f3f6'],
-        anchors: ['hero', 'about', 'resume', 'services', 'portfolio', 'testimonial', 'blog'],
+        anchors: ['hero', 'about', 'resume', 'publications', 'testimonial'],
         menu: '#myMenu',
         direction: 'vertical',
         verticalCentered: true,
         navigation: {
             'position': 'right',
-            'tooltips': ['HOME', 'ABOUT ME', 'RESUME', 'SERVICES', 'PORTFOLIO', 'CLIENT', 'BLOG', 'CONTACT']
+            'tooltips': ['HOME', 'ABOUT ME', 'RESUME', 'PUBLICATIONS', , 'CONTACT']
         },
         loopBottom: true,
         loopTop: true,
