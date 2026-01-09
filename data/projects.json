@@ -1,0 +1,32 @@
+[
+  {
+    "title": "LLMPatient",
+    "description": "Simulazione di pazienti per training clinico: persona strutturata, memoria e adattamento sessione per sessione.",
+    "tags": ["LLM", "LangGraph", "Simulation"],
+    "links": {
+      "repo": "https://github.com/barbicchio/llmpatient",
+      "demo": "",
+      "paper": ""
+    }
+  },
+  {
+    "title": "RAG Fact-Checking Evaluation",
+    "description": "Studio su come quantità/qualità/fonti di evidenza impattano le prestazioni di sistemi RAG in fact-checking.",
+    "tags": ["RAG", "Evaluation", "IR"],
+    "links": {
+      "repo": "https://github.com/barbicchio/your-repo",
+      "demo": "",
+      "paper": ""
+    }
+  },
+  {
+    "title": "D3 NLP Dashboard",
+    "description": "Dashboard interattiva con scraping + NLP + visualizzazione D3 per esplorare trend e segnali testuali.",
+    "tags": ["D3.js", "NLP", "Viz"],
+    "links": {
+      "repo": "https://github.com/barbicchio/your-repo",
+      "demo": "https://your-streamlit-app-url",
+      "paper": ""
+    }
+  }
+]

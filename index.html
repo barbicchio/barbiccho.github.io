@@ -1,5 +1,176 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Portfolio</title></head>
-  <body><h1>Ciao, sono ...</h1><p>Work in progress.</p></body>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>David La Barbera — AI / NLP / IR</title>
+  <meta name="description" content="Portfolio e progetti: AI, NLP, IR, fact-checking, sistemi ibridi human+AI." />
+  <meta name="theme-color" content="#204c81" />
+
+  <!-- Open Graph (per anteprime LinkedIn/WhatsApp) -->
+  <meta property="og:title" content="David La Barbera — Portfolio" />
+  <meta property="og:description" content="AI / NLP / IR — progetti, demo, pubblicazioni." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero-mountain.jpg" />
+
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Vai al contenuto</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>David La Barbera</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn--ghost">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker reveal">AI · NLP · Information Retrieval</p>
+
+          <h1 class="headline reveal">
+            Costruisco sistemi intelligenti<br />
+            <span class="headline-accent">robusti, trasparenti, utili</span>.
+          </h1>
+
+          <p class="subhead reveal">
+            Lavoro tra modelli LLM, retrieval, e approcci ibridi human+AI.
+            Qui trovi i miei progetti e, quando lo decido, anche note e articoli.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a class="btn btn--primary" href="#projects">Vedi i progetti</a>
+            <a class="btn btn--soft" href="#contact">Collaboriamo</a>
+          </div>
+
+          <div class="hero-meta reveal">
+            <a class="chip" href="https://github.com/barbicchio" target="_blank" rel="noopener">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/david-la-barbera-8a1a646a/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="assets/cv_LaBarbera.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="hero-card-top">
+            <div class="status-dot" aria-hidden="true"></div>
+            <div class="hero-card-title">Now</div>
+          </div>
+          <p class="hero-card-text">
+            Focus: LLM systems, RAG evaluation, fact-checking, simulazione di pazienti, interpretabilità.
+          </p>
+          <div class="hero-card-tags">
+            <span class="tag">RAG</span>
+            <span class="tag">Hybrid HITL</span>
+            <span class="tag">Explainability</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p>Showcase selezionato. Ogni progetto ha repo, demo e contesto.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- BLOG (placeholder elegante, non invasivo) -->
+    <section class="section section--muted" id="blog">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Blog</h2>
+          <p>
+            Non ancora. Quando partirà, qui troverai note tecniche e riflessioni brevi.
+          </p>
+        </div>
+        <div class="note-card reveal">
+          <p><strong>Coming soon:</strong> post brevi e densi, senza rumore.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About</h2>
+          <p>Ricerca applicata, attenzione alla misurazione, e preferenza per sistemi spiegabili.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3>Focus</h3>
+            <ul class="list">
+              <li>LLM + Retrieval (RAG), ranking e information access</li>
+              <li>Fact-checking e valutazione realistica</li>
+              <li>Human-in-the-loop e trasparenza/affidabilità</li>
+            </ul>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>Tooling</h3>
+            <div class="badges">
+              <span class="badge">Python</span><span class="badge">PyTorch</span><span class="badge">LangGraph</span>
+              <span class="badge">IR</span><span class="badge">NLP</span><span class="badge">Docker</span>
+              <span class="badge">SQL/NoSQL</span><span class="badge">RAG</span>
+            </div>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>Principi</h3>
+            <p class="muted">
+              Preferisco design semplici, misure oneste, e soluzioni che reggono quando cambiano dati e contesto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--muted" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <h2>Contact</h2>
+            <p>Scrivimi e dimmi che tipo di progetto hai in mente. Rispondo volentieri.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="mailto:labarberadavid92@gmail.com">Email</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/david-la-barbera-8a1a646a/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> David La Barbera</span>
+          <a href="#top">Torna su ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
 </html>
