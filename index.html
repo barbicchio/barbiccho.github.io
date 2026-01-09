@@ -1,85 +1,128 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>David La Barbera — AI / NLP / IR</title>
-  <meta name="description" content="Portfolio e progetti: AI, NLP, IR, fact-checking, sistemi ibridi human+AI." />
-  <meta name="theme-color" content="#204c81" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David La Barbera</title>
+  <meta name="description" content="Research rigor. Engineering execution. System-level AI: RAG systems, LLM agents, human-in-the-loop, evaluation & reliability." />
 
-  <!-- Open Graph (per anteprime LinkedIn/WhatsApp) -->
-  <meta property="og:title" content="David La Barbera — Portfolio" />
-  <meta property="og:description" content="AI / NLP / IR — progetti, demo, pubblicazioni." />
+  <meta property="og:title" content="David La Barbera — System-level AI" />
+  <meta property="og:description" content="Research rigor. Engineering execution. RAG · LLM agents · HITL · evaluation & reliability." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/hero-mountain.jpg" />
+  <meta property="og:image" content="assets/hero-mountain.png" />
 
+  <meta name="theme-color" content="#204c81" />
   <link rel="preload" href="css/styles.css" as="style" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#content">Vai al contenuto</a>
+  <a class="skip" href="#content">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <nav class="nav">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>David La Barbera</span>
+  <div id="top" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <nav class="nav wrap">
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">David La Barbera</span>
       </a>
 
-      <div class="nav-links">
+      <div class="navlinks">
         <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn btn--ghost">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#publications">Publications</a>
+        <a class="btn btn--ghost" href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="content">
+
     <!-- HERO -->
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
 
-      <div class="container hero-inner">
+      <div class="wrap hero-grid">
+        <!-- LEFT -->
         <div class="hero-copy">
-          <p class="kicker reveal">AI · NLP · Information Retrieval</p>
+          <p class="eyebrow reveal">
+            Applied Researcher
+          </p>
 
-          <h1 class="headline reveal">
-            Costruisco sistemi intelligenti<br />
-            <span class="headline-accent">robusti, trasparenti, utili</span>.
+          <h1 class="h1 reveal">
+            David La Barbera
           </h1>
 
-          <p class="subhead reveal">
-            Lavoro tra modelli LLM, retrieval, e approcci ibridi human+AI.
-            Qui trovi i miei progetti e, quando lo decido, anche note e articoli.
+          <p class="tagline reveal">
+            Research rigor. <span class="accent">Engineering execution.</span>
           </p>
 
-          <div class="hero-cta reveal">
-            <a class="btn btn--primary" href="#projects">Vedi i progetti</a>
-            <a class="btn btn--soft" href="#contact">Collaboriamo</a>
-          </div>
+          <div class="value-strip reveal">
+            <p class="value-main">
+                I develop research-level AI systems where theory meets reality.
+            </p>
 
-          <div class="hero-meta reveal">
-            <a class="chip" href="https://github.com/barbicchio" target="_blank" rel="noopener">GitHub</a>
-            <a class="chip" href="https://www.linkedin.com/in/david-la-barbera-8a1a646a/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="chip" href="assets/cv_LaBarbera.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+            <div class="value-tags" aria-label="Keywords">
+              <span>RAG</span>
+              <span>AI agents</span>
+              <span>Human-in-the-loop</span>
+              <span>IR</span>
+              <span>Data Science</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-card reveal">
-          <div class="hero-card-top">
-            <div class="status-dot" aria-hidden="true"></div>
-            <div class="hero-card-title">Now</div>
+        <!-- RIGHT -->
+        <aside class="hero-panel reveal" aria-label="Profile summary">
+          <div class="hero-identity">
+            <div class="hero-photo">
+              <img src="assets/david.png" alt="David La Barbera">
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-n">3</span>
+                <span class="stat-l">Best Paper Awards</span>
+              </div>
+
+              <div class="stat">
+                <span class="stat-n">20</span>
+                <span class="stat-l">Publications</span>
+              </div>
+
+              <div class="stat">
+                <span class="stat-l subtle">Trusted for excellence</span>
+              </div>
+
+              <div class="hero-links" aria-label="Links">
+                <a href="https://github.com/barbicchio" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 008 10.95c.58.1.8-.25.8-.56v-2.1c-3.26.7-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.7-1.3-1.7-1.07-.73.08-.72.08-.72 1.18.08 1.8 1.2 1.8 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.76.4-1.28.72-1.57-2.6-.3-5.33-1.3-5.33-5.77 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.52.12-3.18 0 0 .98-.3 3.2 1.2a11 11 0 015.82 0c2.22-1.5 3.2-1.2 3.2-1.2.64 1.66.24 2.88.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.48-2.74 5.46-5.35 5.76.42.36.78 1.08.78 2.18v3.23c0 .31.22.67.8.56A11.5 11.5 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/>
+                  </svg>
+                </a>
+
+                <a href="https://scholar.google.com" target="_blank" rel="noopener" aria-label="Google Scholar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13L4.5 11.1v4.4C4.5 18.54 8.36 21 12 21s7.5-2.46 7.5-5.5v-4.4L12 16z"/>
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4.98 3.5A2.5 2.5 0 002.5 6a2.5 2.5 0 002.48 2.5h.02A2.5 2.5 0 007.5 6a2.5 2.5 0 00-2.52-2.5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-.95 1.82-1.94 3.75-1.94 4 0 4.74 2.63 4.74 6.05V21h-4v-5.25c0-1.25-.02-2.86-1.74-2.86-1.75 0-2.02 1.36-2.02 2.77V21H9z"/>
+                  </svg>
+                </a>
+
+                <a href="assets/CV_LaBarbera.pdf" target="_blank" rel="noopener" aria-label="Curriculum Vitae">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 2h9l5 5v15a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V8h4.5L14 3.5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
-          <p class="hero-card-text">
-            Focus: LLM systems, RAG evaluation, fact-checking, simulazione di pazienti, interpretabilità.
-          </p>
-          <div class="hero-card-tags">
-            <span class="tag">RAG</span>
-            <span class="tag">Hybrid HITL</span>
-            <span class="tag">Explainability</span>
-          </div>
-        </div>
+        </aside>
       </div>
 
       <div class="hero-fade" aria-hidden="true"></div>
@@ -87,75 +130,491 @@
 
     <!-- PROJECTS -->
     <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Projects</h2>
-          <p>Showcase selezionato. Ogni progetto ha repo, demo e contesto.</p>
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2>Projects Spotlight</h2>
+          <!-- <p class="section-sub">Research + personal work. Minimal descriptions. High signal.</p> -->
+        </header>
+
+<div class="projects-grid projects-grid--featured">
+
+      <!-- FEATURED -->
+      <article class="project-item project-item--featured reveal">
+        <div class="project-title">
+          <img class="project-logo" src="assets/projects/llmpatient.svg" alt="" aria-hidden="true">
+          <h3>LLMPatient</h3>
+          <span class="project-mark">Private build</span>
         </div>
 
-        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+        <p class="project-one">
+          Can we let an AI-agent simulate a mentally ill patient?
+        </p>
+
+        <p class="project-proof">
+          Dual-memory (short/long-term) · multi-session continuity · text + voice.
+        </p>
+
+        <div class="project-keywords">
+          <span>LLM agents</span><span>Memory</span><span>Safety</span><span>Evaluation</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://whattadata.it/" target="_blank" rel="noopener">Project</a>
+          <span class="project-private" aria-label="Source code is private">Code: private</span>
+        </div>
+      </article>
+
+      <!-- SECONDARY -->
+      <article class="project-item reveal">
+        <div class="project-title">
+          <img class="project-logo" src="assets/projects/fvg-meteo.svg" alt="" aria-hidden="true">
+          <h3>FVG Meteo Analysis</h3>
+        </div>
+
+        <p class="project-one">
+          How does the climate changes in FVG region?
+        </p>
+
+        <p class="project-proof">
+          Month-to-month similarity · anomaly detection · dashboard in progress.
+        </p>
+
+        <div class="project-keywords">
+          <span>Time series</span>
+          <span>Anomaly detection</span>
+          <span>Python</span>
+          <span>Visualization</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/barbicchio/FVG-Meteo-Analysis" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </div>
+      </article>
+
+      <article class="project-item reveal">
+        <div class="project-title">
+          <img class="project-logo" src="assets/projects/phd-thesis.svg" alt="" aria-hidden="true">
+          <h3>Human–AI Collaboration in Fact-Checking</h3>
+        </div>
+
+        <p class="project-one">
+          How to let people collaborate with AI in performing fact-checking?
+        </p>
+
+        <p class="project-proof">
+          Bias-aware HITL pipelines · optimized crowdsourcing · human-AI collaboration.
+        </p>
+
+        <div class="project-keywords">
+          <span>Human-in-the-loop</span>
+          <span>Evaluation</span>
+          <span>RAG</span>
+          <span>human/AI bias</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://tesidottorato.depositolegale.it/bitstream/20.500.14242/215121/1/tesi_definitiva_la_barbera.pdf"
+            target="_blank" rel="noopener">
+            PhD Thesis (PDF)
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+        <div class="projects-more reveal">
+          <a href="projects.html">See more →</a>
+        </div>
       </div>
     </section>
 
-    <!-- BLOG (placeholder elegante, non invasivo) -->
-    <section class="section section--muted" id="blog">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Blog</h2>
-          <p>
-            Non ancora. Quando partirà, qui troverai note tecniche e riflessioni brevi.
-          </p>
-        </div>
-        <div class="note-card reveal">
-          <p><strong>Coming soon:</strong> post brevi e densi, senza rumore.</p>
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2>Timeline</h2>
+        </header>
+        <div class="timeline-block reveal" aria-label="Timeline">
+
+          <ol class="timeline">
+            <!-- Work -->
+            <li class="t-item">
+              <div class="t-when">2025-Now</div>
+              <div class="t-main">
+                <div class="t-title">Postdoctoral Researcher · University of Milano-Bicocca</div>
+                <div class="t-sub">LLM-driven therapeutic simulation · evaluation & failure-mode analysis</div>
+                <div class="t-tags">
+                  <span>Agents</span><span>Safety</span><span>Evaluation</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="t-item">
+              <div class="t-when">2025-Now</div>
+              <div class="t-main">
+                <div class="t-title">Contract Professor · University of Pavia</div>
+                <div class="t-sub">Information Retrieval & Recommender Systems (BSc AI)</div>
+                <div class="t-tags">
+                  <span>IR</span><span>Teaching</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Education -->
+            <li class="t-item">
+              <div class="t-when">2021-2025</div>
+              <div class="t-main">
+                <div class="t-title">PhD · <span class="t-grade">Excellent cum Laude</span></div>
+                <div class="t-sub">Computer Science & AI · University of Udine, Italy</div>
+                <div class="t-tags">
+                  <span>HITL</span><span>RAG</span><span>Bias</span><span>Evaluation</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="t-item">
+              <div class="t-when">2016-2019</div>
+              <div class="t-main">
+                <div class="t-title">MSc · <span class="t-grade">110/110 cum Laude</span></div>
+                <div class="t-sub">Computer Science · University of Udine, Italy</div>
+                <div class="t-tags">
+                  <span>NLP</span><span>IR</span><span>Data Science</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="t-item">
+              <div class="t-when">2012-2016</div>
+              <div class="t-main">
+                <div class="t-title">BSc · <span class="t-grade">96/110</span></div>
+                <div class="t-sub">Multimedia and Web Technologies · University of Udine, Italy</div>
+                <div class="t-tags">
+                  <span>CS</span><span>Web Dev</span><span>Engineering</span>
+                </div>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>About</h2>
-          <p>Ricerca applicata, attenzione alla misurazione, e preferenza per sistemi spiegabili.</p>
-        </div>
+    <!-- PUBLICATIONS -->
+<section class="section" id="publications">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>Publications</h2>
+      <p class="section-sub">Peer-reviewed papers and selected technical reports (sorted by year).</p>
+    </header>
 
-        <div class="about-grid">
-          <div class="about-card reveal">
-            <h3>Focus</h3>
-            <ul class="list">
-              <li>LLM + Retrieval (RAG), ranking e information access</li>
-              <li>Fact-checking e valutazione realistica</li>
-              <li>Human-in-the-loop e trasparenza/affidabilità</li>
-            </ul>
-          </div>
+    <div class="pubs reveal">
 
-          <div class="about-card reveal">
-            <h3>Tooling</h3>
-            <div class="badges">
-              <span class="badge">Python</span><span class="badge">PyTorch</span><span class="badge">LangGraph</span>
-              <span class="badge">IR</span><span class="badge">NLP</span><span class="badge">Docker</span>
-              <span class="badge">SQL/NoSQL</span><span class="badge">RAG</span>
-            </div>
-          </div>
+      <!-- 2025 -->
+      <details class="pub" open>
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1007/978-3-031-88714-7_44" target="_blank" rel="noopener">
+              A Comparative Analysis of Retrieval-Augmented Generation and Crowdsourcing for Fact-Checking
+            </a>
+          </span>
+          <span class="pub-venue">ECIR · 2025</span>
+        </summary>
+      </details>
 
-          <div class="about-card reveal">
-            <h3>Principi</h3>
-            <p class="muted">
-              Preferisco design semplici, misure oneste, e soluzioni che reggono quando cambiano dati e contesto.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <details class="pub" open>
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3731120.3744581" target="_blank" rel="noopener">
+              Impersonating the Crowd: Evaluating LLMs' Ability to Replicate Human Judgment in Misinformation Assessment
+            </a>
+          </span>
+          <span class="pub-venue">
+            ICTIR · 2025
+            <span class="badge best-paper" aria-label="Best Paper">Best Paper</span>
+          </span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3726302.3730091" target="_blank" rel="noopener">
+              The Magnitude of Truth: On Using Magnitude Estimation for Truthfulness Assessment
+            </a>
+          </span>
+          <span class="pub-venue">SIGIR · 2025</span>
+        </summary>
+      </details>
+
+      <!-- 2024 -->
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1016/j.ipm.2024.103672" target="_blank" rel="noopener">
+              Cognitive Biases in Fact-Checking and Their Countermeasures: A Review
+            </a>
+          </span>
+          <span class="pub-venue">Information Processing &amp; Management · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1016/j.ipm.2024.103792" target="_blank" rel="noopener">
+              Crowdsourced Fact-checking: Does It Actually Work?
+            </a>
+          </span>
+          <span class="pub-venue">Information Processing &amp; Management · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1007/s41666-023-00154-1" target="_blank" rel="noopener">
+              Supporting Fair and Efficient Emergency Medical Services in a Large Heterogeneous Region
+            </a>
+          </span>
+          <span class="pub-venue">Journal of Healthcare Informatics Research · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3722449.3722464" target="_blank" rel="noopener">
+              Report on the 14th Italian Information Retrieval Workshop (IIR 2024)
+            </a>
+          </span>
+          <span class="pub-venue">SIGIR Forum · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3722449.3722456" target="_blank" rel="noopener">
+              Report on the Hands-On PhD Course on Responsible AI from the Lens of an Information Access Researcher
+            </a>
+          </span>
+          <span class="pub-venue">SIGIR Forum · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3597201" target="_blank" rel="noopener">
+              How Many Crowd Workers Do I Need? On Statistical Power when Crowdsourcing Relevance Judgments
+            </a>
+          </span>
+          <span class="pub-venue">ACM Transactions on Information Systems · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3627673.3680002" target="_blank" rel="noopener">
+              The Elusiveness of Detecting Political Bias in Language Models
+            </a>
+          </span>
+          <span class="pub-venue">CIKM · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://ceur-ws.org/Vol-3802/paper13.pdf" target="_blank" rel="noopener">
+              Enhancing Fact-Checking: From Crowdsourced Validation to Integration with Large Language Models
+            </a>
+          </span>
+          <span class="pub-venue">IIR · 2024</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3626772.3657965" target="_blank" rel="noopener">
+              Combining Large Language Models and Crowdsourcing for Hybrid Human-AI Misinformation Detection
+            </a>
+          </span>
+          <span class="pub-venue">SIGIR · 2024</span>
+        </summary>
+      </details>
+
+      <!-- 2023 -->
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.3233/IA-230011" target="_blank" rel="noopener">
+              Combining human intelligence and machine learning for fact-checking: Towards a hybrid human-in-the-loop framework
+            </a>
+          </span>
+          <span class="pub-venue">Intelligenza Artificiale · 2023</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3546916" target="_blank" rel="noopener">
+              Combining Human and Machine Confidence in Truthfulness Assessment
+            </a>
+          </span>
+          <span class="pub-venue">ACM Journal of Data and Information Quality · 2023</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://ceur-ws.org/Vol-3448/paper-18.pdf" target="_blank" rel="noopener">
+              Fact-Checking at Scale with Crowdsourcing: Experiments and Lessons Learned
+            </a>
+          </span>
+          <span class="pub-venue">IIR · 2023</span>
+        </summary>
+      </details>
+
+      <!-- 2022 -->
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.3390/jimaging8080213" target="_blank" rel="noopener">
+              HEROHE Challenge: Predicting HER2 Status in Breast Cancer from Hematoxylin-Eosin Whole-Slide Imaging
+            </a>
+          </span>
+          <span class="pub-venue">Journal of Imaging · 2022</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://ceur-ws.org/Vol-3287/paper4.pdf" target="_blank" rel="noopener">
+              A Hybrid Human-In-The-Loop Framework for Fact Checking
+            </a>
+          </span>
+          <span class="pub-venue">NL4AI@AI*IA · 2022</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1007/978-3-031-26504-4_32" target="_blank" rel="noopener">
+              A Multi-objective Biased Random-Key Genetic Algorithm for the Siting of Emergency Vehicles
+            </a>
+          </span>
+          <span class="pub-venue">MIC · 2022</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://ceur-ws.org/Vol-3180/paper-44.pdf" target="_blank" rel="noopener">
+              BUM at CheckThat!-2022: A Composite Deep Learning Approach to Fake News Detection using Evidence Retrieval
+            </a>
+          </span>
+          <span class="pub-venue">CLEF (Working Notes) · 2022</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1145/3531146.3534629" target="_blank" rel="noopener">
+              The Effects of Crowd Worker Biases in Fact-Checking Tasks
+            </a>
+          </span>
+          <span class="pub-venue">FAccT · 2022</span>
+        </summary>
+      </details>
+
+      <!-- 2021 -->
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1016/j.ipm.2021.102710" target="_blank" rel="noopener">
+              The many dimensions of truthfulness: Crowdsourcing misinformation assessments on a multidimensional scale
+            </a>
+          </span>
+          <span class="pub-venue">Information Processing &amp; Management · 2021</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1109/ICDH52753.2021.00037" target="_blank" rel="noopener">
+              A Software Simulator for Optimizing Ambulance Location and Response Time: A Preliminary Report
+            </a>
+          </span>
+          <span class="pub-venue">IEEE ICDH · 2021</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://arxiv.org/abs/2108.01222" target="_blank" rel="noopener">
+              The Many Dimensions of Truthfulness: Crowdsourcing Misinformation Assessments on a Multidimensional Scale
+            </a>
+          </span>
+          <span class="pub-venue">arXiv · 2021</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://arxiv.org/abs/2111.04738" target="_blank" rel="noopener">
+              HEROHE Challenge: assessing HER2 status in breast cancer without immunohistochemistry or in situ hybridization
+            </a>
+          </span>
+          <span class="pub-venue">arXiv · 2021</span>
+        </summary>
+      </details>
+
+      <!-- 2020 -->
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.3390/jimaging6090082" target="_blank" rel="noopener">
+              Detection of HER2 from Haematoxylin-Eosin Slides Through a Cascade of Deep Learning Classifiers via Multi-Instance Learning
+            </a>
+          </span>
+          <span class="pub-venue">Journal of Imaging · 2020</span>
+        </summary>
+      </details>
+
+      <details class="pub">
+        <summary>
+          <span class="pub-title">
+            <a href="https://doi.org/10.1007/978-3-030-45442-5_26" target="_blank" rel="noopener">
+              Crowdsourcing Truthfulness: The Impact of Judgment Scale and Assessor Bias
+            </a>
+          </span>
+          <span class="pub-venue">ECIR · 2020</span>
+        </summary>
+      </details>
+
+    </div>
+  </div>
+</section>
 
     <!-- CONTACT -->
-    <section class="section section--muted" id="contact">
-      <div class="container">
-        <div class="contact-card reveal">
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
           <div>
             <h2>Contact</h2>
-            <p>Scrivimi e dimmi che tipo di progetto hai in mente. Rispondo volentieri.</p>
           </div>
           <div class="contact-actions">
             <a class="btn btn--primary" href="mailto:labarberadavid92@gmail.com">Email</a>
@@ -165,10 +624,11 @@
 
         <footer class="footer">
           <span>© <span id="year"></span> David La Barbera</span>
-          <a href="#top">Torna su ↑</a>
+          <a href="#top">Back to top ↑</a>
         </footer>
       </div>
     </section>
+
   </main>
 
   <script src="js/main.js" defer></script>

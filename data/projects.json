@@ -1,6 +1,7 @@
 [
   {
     "title": "LLMPatient",
+    "logo": "assets/projects/llmpatient.svg",
     "description": "Simulazione di pazienti per training clinico: persona strutturata, memoria e adattamento sessione per sessione.",
     "tags": ["LLM", "LangGraph", "Simulation"],
     "links": {
@@ -11,6 +12,7 @@
   },
   {
     "title": "RAG Fact-Checking Evaluation",
+    "logo": "assets/projects/rag-fact-checking.svg",
     "description": "Studio su come quantità/qualità/fonti di evidenza impattano le prestazioni di sistemi RAG in fact-checking.",
     "tags": ["RAG", "Evaluation", "IR"],
     "links": {
@@ -21,6 +23,7 @@
   },
   {
     "title": "D3 NLP Dashboard",
+    "logo": "assets/projects/d3-nlp-dashboard.svg",
     "description": "Dashboard interattiva con scraping + NLP + visualizzazione D3 per esplorare trend e segnali testuali.",
     "tags": ["D3.js", "NLP", "Viz"],
     "links": {
